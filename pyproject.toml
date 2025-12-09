@@ -7,9 +7,17 @@ requires-python = ">=3.12"
 dependencies = [
     "agent-framework-ag-ui>=1.0.0b251204",
     "dotenv>=0.9.9",
+    "mcp-atlassian>=0.11.10",
     "poethepoet>=0.38.0",
 ]
 
 [tool.poe.tasks]
 server = "python server.py"
 client = "python client.py"
+jiramcp = "uv tool run mcp-atlassian --env-file .env --transport streamable-http --port 9000"
+
+# node! 
+# npx mcp-remote https://mcp.atlassian.com/v1/sse
+
+# inspector
+# npx @modelcontextprotocol/inspector
