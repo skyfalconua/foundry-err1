@@ -8,6 +8,14 @@ wheels/
 
 # Virtual environments
 .venv
+node_modules/
 
 # Environment variables file
 .env
+
+# IDE settings
+.vscode/
+.idea/
+
+# miscellaneous
+.DS_Store

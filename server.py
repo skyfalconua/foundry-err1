@@ -12,7 +12,6 @@ import time
 from dotenv import load_dotenv
 load_dotenv()
 
-
 api_key = os.environ.get("AZURE_OPENAI_API_KEY")
 endpoint = os.environ.get("AZURE_OPENAI_ENDPOINT")
 deployment_name = os.environ.get("AZURE_OPENAI_DEPLOYMENT_NAME")
